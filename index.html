@@ -8,44 +8,60 @@
     <meta name="author" content="Nicole Daniels">
             
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
               
   </head>
 
 
   <body>
-    <h1>The Official Beyonce Survey</h1>
+    <div class="survey-form">
+      <h1 class="survey-title">The #Flawless Beyonce Survey</h1>
 
-    <form action="" method="GET" id="beyonce_form">
-      <h2>1. What is your favorite Beyonce era?</h2>
-      <input type="radio" name="beyonce_era" value="girls_tyme">Girls Tyme
-      <input type="radio" name="beyonce_era" value="destinys_child">Destiny's Child
-      <input type="radio" name="beyonce_era" value="solo_beyonce">Solo Beyonce
+      <img src="images/beyonce_hype.gif" alt="Beyonce throwing the deuces">
+      <h5 class="caption">#TruePower #Flawless #QueenB</h5>
 
-      <h2>2. What are your favorite Beyonce anthems?</h2>
-      <input type="checkbox" name="beyonce_anthem" value="single_ladies">Single Ladies (Put a Ring on It)
-      <input type="checkbox" name="beyonce_anthem" value="run_the_world_girls">Run the World (Girls)
-      <input type="checkbox" name="beyonce_anthem" value="pretty_hurts">Pretty Hurts
-      <input type="checkbox" name="beyonce_anthem" value="partition">Partition
-      <input type="checkbox" name="beyonce_anthem" value="formation">Formation
+      <form action="" method="GET" id="beyonce_form">
+        <div class="survey-question">
+          <h2 class=survey-title>1. What is your favorite Beyonce era?</h2>
+          <input type="radio" name="beyonce_era" value="girls_tyme">Girls Tyme
+          <input type="radio" name="beyonce_era" value="destinys_child">Destiny's Child
+          <input type="radio" name="beyonce_era" value="solo_beyonce">Solo Beyonce
+        </div>
+  
+        <div class="survey-question">
+          <h2 class="survey-title">2. What are your favorite Beyonce anthems?</h2>
+          <input type="checkbox" name="beyonce_anthem" value="single_ladies">Single Ladies (Put a Ring on It)
+          <input type="checkbox" name="beyonce_anthem" value="run_the_world_girls">Run the World (Girls)
+          <input type="checkbox" name="beyonce_anthem" value="pretty_hurts">Pretty Hurts
+          <input type="checkbox" name="beyonce_anthem" value="partition">Partition
+          <input type="checkbox" name="beyonce_anthem" value="formation">Formation
+        </div>
 
-      <h2>3. In a few words, please summarize your emotions when Lemonade was released</h2>
-      <input type="text" name="beyonce_emotions">
+        <div class="survey-question">
+          <h2 class="survey-title">3. In a few words, please summarize your emotions when Lemonade was released.</h2>
+          <input type="text" name="beyonce_emotions">
+        </div>
 
-      <h2>4. On a scales of 1 (Boo) to 5 (YAS QUEEN), please rate Beyonce's self-titled album</h2>
-      <input type="number" name="beyonce_album_rating">
+        <div class="survey-question">
+          <h2 class="survey-title">4. On a scale of 1 (Boo) to 5 (YAS QUEEN), please rate Beyonce's self-titled album.</h2>
+          <input type="number" name="beyonce_album_rating">
+        </div>
 
-      <h2>5. What is your favorite Beyonce album?</h2>
-      <select name="album">
-        <option value="lemonade">Lemonade</option>
-        <option value="beyonce">Beyonce</option>
-        <option value="4">4</option>
-        <option value="sasha_fierce">I Am.. Sasha Fierce</option>
-        <option value="dangerously_in_love">Dangerously In Love</option>
-      </select>
+        <div class="survey-question">
+          <h2 class="survey-title">5. What is your favorite Beyonce album?</h2>
+          <select name="album">
+            <option value="lemonade">Lemonade</option>
+            <option value="beyonce">Beyonce</option>
+            <option value="4">4</option>
+            <option value="sasha_fierce">I Am.. Sasha Fierce</option>
+            <option value="dangerously_in_love">Dangerously In Love</option>
+          </select>
+        </div>
 
-      <input type="submit" value="submit">
-      <input type="reset">
-        
-    </form>
+        <input type="submit" value="submit">
+        <input type="reset">
+          
+      </form>
+    </div>
   </body>
 </html>

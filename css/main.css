@@ -1,0 +1,23 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #4db8ff;
+}
+
+.survey-form{
+  text-align: center;
+}
+
+.survey-question{
+  margin-top: 2em;
+  margin-bottom:2em;
+}
+
+h5.caption {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.survey-title {
+  font-weight: bolder;
+  color: white;
+}
