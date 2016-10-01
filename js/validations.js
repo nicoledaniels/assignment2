@@ -1,33 +1,37 @@
 $(document).ready(function(){
   $("#beyonce_form").submit(function(e){
-    warnings = [];
+    var warnings = [];
 
-    era = $('input[name=beyonce_era]:checked').length;
+    var era = $('input[name=beyonce_era]:checked').length;
     if(era == 0) {
-      warnings.push("You didn't select a radio button for beyonce_era!");
+      var message = 'You did not select a radio button for beyonce_era.'
+      warnings.push(message);
     }
 
-    anthem  = $('input[name=beyonce_anthem]:checked').length;
+    var anthem  = $('input[name=beyonce_anthem]:checked').length;
     if(anthem == 0) {
-      warnings.push("You didn't select a checkbox for beyonce_anthem!");
+      var message = 'You did not select a checkbox for beyonce_anthem.';
+      warnings.push(message);
     }
 
-    emotions = $('input[name=beyonce_emotions]').val();
+    var emotions = $('input[name=beyonce_emotions]').val();
     if(emotions == "") {
-      warnings.push("You didn't enter text for beyonce_emotions!");
+      var message = 'You did not enter text for beyonce_emotions.';
+      warnings.push(message);
     }
 
-    rating = $('input[name=beyonce_album_rating]').val()
+    var rating = $('input[name=beyonce_album_rating]').val()
     if(rating == "" || isNaN(rating) || parseInt(rating) > 5 || parseInt(rating) < 1) {
-      warnings.push("You entered an invalid value for beyonce_album_rating. Must be a number between 1 and 5.");
+      var message = 'You entered an invalid value for beyonce_album_rating. Must be a number between 1 and 5.';
+      warnings.push(message);
     }
 
     if (warnings.length > 0) {
-      displayErrors = warnings.join("<br/>");
+      var displayErrors = warnings.join('<br/>');
       $("#errors").html(displayErrors);
     }
     else {
-      text = "<h1>Your response has been recorded! The #BeyHive rejoices</h1>";
+      var text = '<h1>Your response has been recorded! The #BeyHive rejoices.</h1>';
       $("#beyonce_form").replaceWith(text);
     }
 
