@@ -21,3 +21,8 @@ h5.caption {
   font-weight: bolder;
   color: white;
 }
+
+#errors{
+  color: red;
+  font-weight: bolder;
+}

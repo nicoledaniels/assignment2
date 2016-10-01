@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
       
-    <title>Assignment 2 - Make a Form</title>
+    <title>Assignment 2 - Beyonce Survey</title>
     <meta name="description" content="Nicole Daniels' form for Assignment 2">
     <meta name="author" content="Nicole Daniels">
             
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/validations.js"></script>
               
   </head>
-
 
   <body>
     <div class="survey-form">
@@ -20,7 +21,7 @@
       <img src="images/beyonce_hype.gif" alt="Beyonce throwing the deuces">
       <h5 class="caption">#TruePower #Flawless #QueenB</h5>
 
-      <form action="" method="GET" id="beyonce_form">
+      <form action="" method="POST" id="beyonce_form">
         <div class="survey-question">
           <h2 class=survey-title>1. What is your favorite Beyonce era?</h2>
           <input type="radio" name="beyonce_era" value="girls_tyme">Girls Tyme
@@ -58,9 +59,11 @@
           </select>
         </div>
 
+        <h3 id="errors"></h3>
+
         <input type="submit" value="submit">
         <input type="reset">
-          
+
       </form>
     </div>
   </body>
